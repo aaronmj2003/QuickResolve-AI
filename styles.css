@@ -5,20 +5,38 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
 header {
     background: #333;
     color: #fff;
     padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
     list-style: none;
+    display: flex;
 }
 
 nav ul li {
@@ -31,9 +49,48 @@ nav ul li a {
     font-size: 1.1rem;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 .section {
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
     text-align: center;
+    background: #fff;
+    margin-top: 5rem;
+}
+
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?tech,ai') no-repeat center center/cover;
+    color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .cta {
+    padding: 1rem 2rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .cta:hover {
+    background: #555;
 }
 
 .container {
