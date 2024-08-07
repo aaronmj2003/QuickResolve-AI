@@ -34,6 +34,11 @@ nav .logo {
     font-weight: 700;
 }
 
+nav .logo a{
+    color: #fff;
+    text-decoration: none;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -106,7 +111,7 @@ nav ul li a:hover {
 }
 
 .home-content .cta:hover {
-    background: #005A9C; 
+    background: #008E97; 
     cursor: pointer; 
 }
 .home-image {
